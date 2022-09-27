@@ -11,7 +11,7 @@ https://community.getmailspring.com/t/apple-theme-for-mailspring/5583
 
 **Requirements:**
 
-Mailspring avatars addon*
+Requires Mailspring avatars addon*
 
 https://github.com/Striffly/mailspring-avatars/releases
 
