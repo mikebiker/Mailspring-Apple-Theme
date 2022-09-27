@@ -1,0 +1,235 @@
+@import 'ui-variables';
+
+.tokenizing-field .token.invalid,
+.tokenizing-field .token.invalid:hover,
+.tokenizing-field .token.invalid.selected,
+.tokenizing-field .token.invalid.dragging {
+  color: @sidebar;
+  background: none;
+  border: none;
+  box-shadow: inset 0 0 0 1px @invalid;
+}
+
+// Darken composer action bar to contrast from background
+.composer-inner-wrap .composer-action-bar-wrap,
+.composer-full-window .composer-inner-wrap .composer-action-bar-wrap {
+  background: darken(@messagelist-bg, 1%);
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+// Replacing focused state with theme accent
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+  background: white;
+  &.focused {
+    box-shadow: 0 0 0 1px @accent;
+  }
+}
+
+.message-item-white-wrap.composer-outer-wrap
+  .composer-participant-field
+  .dropdown-component
+  .signature-button-dropdown
+  .only-item {
+  background: white;
+}
+
+// make action bar at bottom of composer a bit darker than background
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+  & .composer-action-bar-wrap {
+    background: transparent;
+  }
+  &.focused .composer-action-bar-wrap {
+    background: darken(@messagelist-bg, 1%);
+  }
+}
+
+.composer-inner-wrap .composer-action-bar-wrap .composer-action-bar-content {
+  padding: 20px;
+  max-width: 100%;
+}
+
+// ============================
+//  Attachements
+// ============================
+
+.file-wrap.file-image-wrap .file-preview .file-name-container {
+  background: fade(@sidebar, 20%);
+  min-height: 0;
+  & .file-name {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background: fade(@sidebar, 80%);
+    padding: 5px 15px;
+  }
+}
+
+body.platform-win32 .button-dropdown.btn-emphasis .primary-item {
+  border-radius: 6px 0px 0px 6px;
+}
+
+body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker {
+  border-radius: 0px 6px 6px 0px;
+}
+
+body.platform-win32 .button-dropdown.btn-emphasis .primary-item:hover {
+  border-radius: 6px 0px 0px 6px;
+  background: #30c5ff !important;
+}
+
+body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker:hover {
+  border-radius: 0px 6px 6px 0px;
+  background: #30c5ff !important;
+}
+
+body.platform-win32 .button-dropdown.btn-emphasis .primary-item, body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker, body.platform-win32 .button-dropdown.btn-emphasis .only-item {
+  border: 0;
+  background: #30c5ff !important;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap .composer-action-bar-wrap {
+  background: transparent;
+  border-radius: 0px 0px 6px 6px;
+}
+
+body.platform-win32 #message-list .message-item-wrap .message-item-white-wrap {
+  border-radius: 6px;
+}
+
+.RichEditor-toolbar .floating-container {
+  z-index: 2;
+  width: 100%;
+  min-height: 29px;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap .RichEditor-toolbar .inner {
+  background: none !important;
+}
+
+body.platform-win32 .token {
+  border-radius: 99px;
+}
+
+.RichEditor-toolbar .color-picker > button {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  box-shadow: none !important;
+}
+
+.tokenizing-field .token {
+  box-shadow: none !important;
+  border: 1px solid#E2E3E3;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap.focused  {
+  box-shadow: none !important;
+}
+
+.RichEditor-root .RichEditor-content {
+  padding-top: 12px;
+}
+
+.composer-inner-wrap .composer-action-bar-wrap {
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap.focused .composer-action-bar-wrap {
+  background: none !important;
+} 
+
+.composer-inner-wrap .composer-action-bar-wrap .composer-action-bar-content {
+  padding: 0px;
+  padding-left: 14px;
+  padding-right: 20px;
+  padding-bottom: 20px !important;
+  padding-top: 8px !important;
+}
+
+#message-list > div.messages-wrap.ready.scroll-region > div.scroll-region-content > div > div.draft.message-item-wrap > div > div > div > div.composer-action-bar-wrap > div > div.button-dropdown.bordered.btn-send.btn-emphasis.btn-text > div.primary-item > span > img {
+  display: none !important;
+}
+
+body.platform-win32 .token:hover {
+  background: #E9E9E9 !important;
+}
+
+body.platform-win32 .token.selected:hover {
+  background: #c2c2c2 !important;
+  border: 1px solid #b9b9b9 !important;
+  color: #ffffff !important;
+}
+
+.tokenizing-field .token.selected, .tokenizing-field .token.dragging {
+  background: #b3b3b3 !important;
+  border: 1px solid #aaaaaa !important;
+  border-radius: 3px;
+  margin: 0 4px 0 0;
+  color: #ffffff !important;
+  border-radius: 99px !important;
+}
+
+.tokenizing-field .token.selected .action, .tokenizing-field .token.dragging .action {
+  color: #ffffff !important;
+}
+
+.tokenizing-field .token.selected .action img, .tokenizing-field .token.dragging .action img {
+  background-color: #ffffff !important;
+}
+
+#message-list > div.messages-wrap.ready.scroll-region > div.scroll-region-content > div > div.footer-reply-area-wrap > div > img {
+  -webkit-mask-image: url(../static/images/reply-dropdown/ic-dropdown-reply@2x.png) !important;
+}
+
+#message-list .footer-reply-area-wrap .reply-text {
+  content: 'whatever it is you want to add' !important;
+}
+
+.menu .item.selected {
+  background: #D0D0D0 !important;
+  color: #000000 !important;
+  border-radius: 6px;
+}
+
+.menu .item.selected .primary, .menu .item:active .primary {
+  color: #000000;
+}
+
+.tokenizing-field .content-container {
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 2px;
+  background-color: #E9E9E9;
+  position: absolute;
+  z-index: 3;
+  border-radius: 6px !important;
+}
+
+body.is-blurred .tokenizing-field .token:not(.invalid) {
+  background: #E9E9E9;
+}
+
+.tokenizing-field .token.invalid, .tokenizing-field .token.invalid:hover, .tokenizing-field .token.invalid.selected, .tokenizing-field .token.invalid.dragging {
+  color: #000000 !important;
+  background: rgb(255, 180, 180) !important;
+  border: none;
+  box-shadow: none;
+}
+
+.composer-inner-wrap .composer-action-bar-wrap, .composer-full-window .composer-inner-wrap .composer-action-bar-wrap {
+  background: #ffffff !important;
+}
+
+body.platform-win32 .token.invalid:hover {
+  color: #000000 !important;
+  background: rgb(255, 188, 188) !important;
+}

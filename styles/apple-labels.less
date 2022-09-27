@@ -1,0 +1,26 @@
+@import 'ui-variables';
+
+// Make labels white on accent color when message is selected
+.thread-list .focused .mail-label,
+.draft-list .focused .mail-label,
+.thread-list.handler-split .list-item.selected .mail-label {
+  background: @accent !important;
+  color: white !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+#message-list .mail-label.removable {
+  border-radius: 50px !important;
+  transform: translateY(3px);
+}
+
+#message-list .mail-label.removable {
+  box-shadow: none !important;
+  border: none;
+}
+
+.mail-label {
+  box-shadow: none !important;
+  border-radius: 99px !important;
+}

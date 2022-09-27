@@ -1,0 +1,167 @@
+@import 'ui-variables';
+
+.list-container .list-item:hover {
+  background: #ffffff;
+}
+
+.thread-list-narrow .list-tabular .list-column.list-column-Item {
+  padding-left: 18px;
+  margin-top: 6px;
+}
+
+// Make corresponding toolbar match threadlist background
+.column-ThreadList,
+.toolbar-ThreadList,
+.toolbar-MessageList {
+  height: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid @border-color;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.list-item .list-tabular-item.focused{
+  transform: translateY(-1px);
+}
+
+.thread-list-narrow .snippet-and-labels {
+  padding-bottom: 11px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+// move search bar edges in slightly
+.toolbar-ThreadList {
+  padding: 0 10px;
+}
+
+// jackiehluo -> Hide search bar when buttons appear in list mode
+.toolbar-ThreadList .selection-bar .inner {
+  background: #FFFFFF;
+}
+
+.list-tabular .list-tabular-item {
+  border-bottom: none !important;
+}
+// Using !important so multiple selection actions
+
+.list-item.focused,
+.list-item.selected,
+.list-item.selected {
+  box-shadow: 0px 0px 0px 12px #ffffff !important;
+  border-radius: 9px !important;
+  background: #0062E1;
+  color: #FFFFFF;
+  border: none !important;
+  border: 1px solid #E9E9E9 !important;
+}
+
+body.is-blurred .list-container .list-item.focused,
+body.is-blurred .list-container .list-item.selected,
+body.is-blurred .thread-list.handler-split .list-item.selected {
+  background: #0062E1;
+  color: #FFFFFF;
+}
+
+
+
+.list-container .list-item.focused, .list-container .list-item.selected, .thread-list.handler-split .list-item.selected {
+  background: #0062E1;
+  color: #FFFFFF;
+}
+
+.body.is-blurred .list-container .list-item.focused, body.is-blurred .list-container .list-item.selected, body.is-blurred .thread-list.handler-split .list-item.selected {
+  background: #0062E1;
+  color: #FFFFFF;
+}
+
+.thread-list .thread-icon.thread-icon-unread {
+  background-image: none;
+  background-color: #388ADD !important;
+}
+
+.thread-list .list-item, .draft-list .list-item {
+  background-color: #ffffff;
+}
+
+.participants {
+  font-weight: 700;
+}
+
+.thread-search-bar {
+  background: #ededed;
+  border-radius: 99px;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  width: 9999px !important;
+}
+
+//.thread-list .list-container, .draft-list .list-container, .thread-list .scroll-region, .draft-list .scroll-region {
+//  transform: translateY(5px);
+//}
+
+#sheet-container > div > div:nth-child(3) > div > div > div.column-ThreadList > div:nth-child(1) > div > div > div.scroll-region > div.scroll-region-content > div > div.list-rows {
+  margin-top: 10px !important;
+}
+
+.column-ThreadList {
+  height: 100%;
+  min-width: 100px !important;
+  max-width: 559px !important;
+}
+
+#sheet-container > div > div:nth-child(3) > div > div > div.column-ThreadList > div > div > div > div.scroll-region > div.scroll-region-content > div > div.list-rows > div > div:nth-child(2) > div > div > div > div.thread-info-column > div.participants-wrapper > img {
+  filter:brightness(0) invert(57%) sepia(38%) saturate(4978%) hue-rotate(164deg) brightness(105%) contrast(103%) !important;
+}
+
+.thread-avatar > img {
+  height: auto !important;
+  position: unset !important;
+  vertical-align: middle !important;
+  margin: auto auto !important;
+  display: block !important;
+}
+
+.thread-avatar {
+  display: block !important;
+  vertical-align: middle !important;
+}
+
+.column-MessageList {
+  height: 100%;
+  background: #f9f9f9 !important;
+  border-left: 1px solid #e7e7e7;
+}
+
+// Empty Warning
+
+.thread-list-empty-folder-bar {
+  color: #000000 !important;
+  background-color: #ffe4e4 !important;
+  border: 1px solid #ffd8d8!important;
+  padding: 5px 5px 5px 18px !important;
+  align-items: center !important;
+  display: flex !important;
+  font-size: 0.9em !important;
+  flex-shrink: 0 !important;
+  margin-top: 8px !important;
+  border-radius: 6px !important;
+}
+
+#sheet-container > div > div:nth-child(3) > div > div > div.column-ThreadList > div:nth-child(1) > div.thread-list-empty-folder-bar > div.btn {
+  background: #ffb5b5 !important;
+  border-radius: 6px !important;
+  border: 1px solid #ffa9a9 !important;
+  box-shadow: none !important;
+  color: black !important;
+}
+
+#sheet-container > div > div:nth-child(3) > div > div > div.column-ThreadList > div:nth-child(1) > div.thread-list-empty-folder-bar > div.btn:hover {
+  background: #ffb5b5 !important;
+  border: 1px solid #ffa9a9 !important;
+  filter: brightness(1.05) !important;
+}
+
+#sheet-container > div > div:nth-child(3) > div > div > div.column-DraftList > div > div > div.scroll-region > div.scroll-region-content > div > div.list-rows > div > div:nth-child(2) > div {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd !important;
+}

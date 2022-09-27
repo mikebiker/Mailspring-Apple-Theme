@@ -1,0 +1,45 @@
+// All themes need a file called `ui-variables` that extends from the base
+// variables and overrides colors, padding, etc. Other plugins import
+// `ui-variables` to make their custom CSS react to the current theme.
+@import 'base/ui-variables';
+
+// Default
+@sidebar: #E7E7E7;
+@accent: #DADADA;
+
+// Luna
+// @sidebar: #202C46;
+// @accent: #39DFF8;
+
+// Zond
+// @sidebar: #333333;
+// @accent: #F6D49C;
+
+// Gemini
+// @sidebar: #00203C;
+// @accent: #F6B312;
+
+// Mercury
+// @sidebar: #555;
+// @accent: #999;
+
+// Apollo
+// @sidebar: #3A1E15;
+// @accent: #F6AA1C;
+
+@accent-primary: @accent;
+@threadlist-bg: #FCFCFC;
+@messagelist-bg: tint(@sidebar, 100%);
+@active-thread-text: @sidebar;
+@sidebar-text: #000000;
+@active-sidebar-text: #000000;
+@border-color: fade(@sidebar, 100%);
+@danger: #ff5f56;
+@minimize: #fbd852;
+@maximize: #8dd07d;
+@swipe-archive: #8dd07d;
+@swipe-snooze: #fbd852;
+@swipe-trash: @danger;
+@invalid: @danger;
+
+@sidebar-margin: 15px;

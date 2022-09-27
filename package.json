@@ -1,0 +1,12 @@
+{
+  "name": "Apple",
+  "displayName": "Apple",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "",
+  "license": "",
+  "engines": {
+    "mailspring": ""
+  },
+  "private": true
+}
